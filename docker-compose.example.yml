@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  ip2geo_app:
+    build: .
+    restart: always
+    container_name: "ip2geo_app"
+    ports:
+      - "127.0.0.1:2711:2711"

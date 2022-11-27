@@ -1,0 +1,9 @@
+FROM alpine:latest
+
+RUN mkdir /usr/app
+COPY ./IP2LOCATION-LITE-DB5.BIN /usr/app
+COPY ./ip2geo /usr/app
+
+WORKDIR /usr/app
+
+CMD ["./ip2geo"]
